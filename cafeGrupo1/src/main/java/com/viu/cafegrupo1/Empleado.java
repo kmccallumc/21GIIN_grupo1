@@ -6,7 +6,8 @@
 
 package com.viu.cafegrupo1;
 
-public class Empleado {
+// creo la clase empleado como abstracto, para poder heredar luego
+public abstract class Empleado {
     String nombres;
     String apellidos;
     String documento_id;

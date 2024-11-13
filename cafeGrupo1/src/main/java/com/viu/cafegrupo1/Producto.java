@@ -5,7 +5,7 @@
 
 package com.viu.cafegrupo1;
 
-public class Producto {
+public abstract class Producto {
     String nombreProducto;
     Double precio;
     int stock;
