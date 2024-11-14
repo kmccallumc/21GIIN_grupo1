@@ -7,7 +7,7 @@ package com.viu.cafegrupo1;
 
 public abstract class Producto {
     String nombreProducto;
-    Double precio;
+    double precio;
     int stock;
     
     public Producto (String nomProd, Double precio, int stock){
@@ -43,7 +43,16 @@ public abstract class Producto {
     }
     
     // Valor total del inventario
-    public Double valorTotalInventario(){
+    public double valorTotalInventario(){
         return (this.stock * this.precio);
+    }
+    
+    public String describirProducto(){
+        String descProducto = "\nEl producto " + 
+                this.nombreProducto + 
+                " cuesta " + this.precio + 
+                " y tenemos " + this.stock + 
+                " en stock actualmente.";
+        return descProducto;
     }
 }

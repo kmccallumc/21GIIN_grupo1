@@ -32,8 +32,18 @@ public class Gerente extends Empleado{
         this.bono = bono;
     }
 
-    public Double SalarioTotal() {
+    public double salarioTotal() {
         return (this.bono + this.salario);
     }
+    
+    @Override
+    public double calcularSalario(double extras){
+        try{
+            return (salarioTotal() + extras);
+        }catch(NumberFormatException nfe){
+            System.out.print(nfe.getMessage());
+            return -1;
+        }
+    } 
     
 }

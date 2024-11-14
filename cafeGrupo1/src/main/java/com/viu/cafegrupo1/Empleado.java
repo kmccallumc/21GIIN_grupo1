@@ -31,7 +31,7 @@ public abstract class Empleado {
     public String getDocumentoId(){
         return this.documento_id;
     }
-    public Double getSalario(){
+    public double getSalario(){
         return this.salario;
     }
     
@@ -50,4 +50,13 @@ public abstract class Empleado {
         this.salario = salario;
     }
 
+    public double calcularSalario(double extras){
+        try{
+            return extras+this.salario;
+        }catch(NumberFormatException nfe){
+            System.out.print(nfe.getMessage());
+            return -1;
+        }
+            
+    }
 }
