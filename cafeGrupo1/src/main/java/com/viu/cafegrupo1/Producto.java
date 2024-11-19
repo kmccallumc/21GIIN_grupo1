@@ -1,6 +1,7 @@
 /**
- *
  * @author kmccallum <Kathleen_McCallum VIU>
+ * @author dcollado <David Collado VIU>
+ * @author oguardia <Oscar Guardia VIU>
  */
 
 package com.viu.cafegrupo1;
@@ -17,7 +18,6 @@ public abstract class Producto {
     }
     
     // los gets
-    
     public String getNombreProducto(){
         return this.nombreProducto;
     }
@@ -29,19 +29,16 @@ public abstract class Producto {
     }
     
     // los sets
-    
     public void setNombreProducto(String nomprod){
         this.nombreProducto = nomprod;
     }
-    
     public void setPrecio(Double precio){
         this.precio = precio;
     }
-    
     public void setStock(int stock){
         this.stock = stock;
     }
-    
+
     // Valor total del inventario
     public double valorTotalInventario(){
         return (this.stock * this.precio);

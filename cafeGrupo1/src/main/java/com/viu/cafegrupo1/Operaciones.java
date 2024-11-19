@@ -1,10 +1,10 @@
-
+/**
+ * @author kmccallum <Kathleen_McCallum VIU>
+ * @author dcollado <David Collado VIU>
+ * @author oguardia <Oscar Guardia VIU>
+ */
 package com.viu.cafegrupo1;
 
-/**
- *
- * @author kmccallum <Kathleen_McCallum VIU>
- */
 // KMC - acqui no estoy muy segura de que funcionalidades deberia tener
 
 class Operaciones {

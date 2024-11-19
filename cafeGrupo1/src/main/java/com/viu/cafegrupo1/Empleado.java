@@ -1,7 +1,7 @@
 /**
- *
  * @author kmccallum <Kathleen_McCallum VIU>
- * 
+ * @author dcollado <David Collado VIU>
+ * @author oguardia <Oscar Guardia VIU>
  */
 
 package com.viu.cafegrupo1;
@@ -39,7 +39,6 @@ public abstract class Empleado {
     public void setNombres(String nombres) {
         this.nombres = nombres;
     }
-    
     public void setApellidos(String apellidos) {
         this.apellidos = apellidos;
     }
