@@ -34,6 +34,8 @@ public class CafeGrupo1 {
            System.out.println(gpProductos[i].describirProducto());
         }
         
-        
+        // voy a incrementar la nota de cata a todos los productos
+        Operaciones operCafe = new Operaciones(gpProductos);
+        operCafe.incrementaNotaCata();
     }
 }
