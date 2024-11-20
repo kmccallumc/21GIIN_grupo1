@@ -32,7 +32,7 @@ public class cafeEspecial extends Producto {
     @Override
     public String describirProducto(){
         String descOriginal = super.describirProducto();
-        String descCafe = ". Además el café es de origen " + 
+        String descCafe = ". Ademas el cafe es de origen " + 
                 this.origen + 
                 " y tiene una nota de cata " + this.notaCata;
         String descFinal = descOriginal.concat(descCafe);

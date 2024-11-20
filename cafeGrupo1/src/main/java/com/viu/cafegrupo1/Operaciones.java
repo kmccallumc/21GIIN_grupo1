@@ -5,10 +5,8 @@
  */
 package com.viu.cafegrupo1;
 
-// KMC - acqui no estoy muy segura de que funcionalidades deberia tener
-
 class Operaciones {
-    private Producto prod[]; // tenemos un listado de productos?
+    private Producto prod[]; // tenemos un listado de productos
     
     public Operaciones (Producto[] prod){
         this.prod = prod;
