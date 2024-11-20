@@ -14,7 +14,7 @@ class Operaciones {
         this.prod = prod;
     }
     
-    //prueba
+    //esto es una prueba de que puedo editar codigo
     
     public boolean realizarPedido(){
         // le paso el listado de productos, 
