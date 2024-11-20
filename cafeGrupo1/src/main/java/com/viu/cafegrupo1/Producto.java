@@ -45,10 +45,10 @@ public abstract class Producto {
     }
     
     public String describirProducto(){
-        String descProducto = "\nEl producto " + 
+        String descProducto = "* El producto '" + 
                 this.nombreProducto + 
-                " cuesta " + this.precio + 
-                " y tenemos " + this.stock + 
+                "' cuesta " + this.precio + 
+                " euros y tenemos " + this.stock + 
                 " en stock actualmente.";
         return descProducto;
     }

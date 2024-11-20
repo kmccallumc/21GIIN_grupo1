@@ -6,21 +6,15 @@
 package com.viu.cafegrupo1;
 
 // para heredar de Empleado, uso el extend
-public class Gerente extends Empleado{
-    String departamento;
+// necesito ademas de un gerente, operarios
+public class Operario extends Empleado{
     Double bono;
     
-    public Gerente(String nombres, String apellidos, String documentoId, double salario){
+    public Operario(String nombres, String apellidos, String documentoId, double salario){
         super(nombres, apellidos, documentoId, salario);
     }
     
     // añado los get y set para los atributos departamento y bono
-    public String getDepartamento(){
-        return this.departamento;
-    }
-    public void setDepartamento(String depa){
-        this.departamento = depa;
-    }
     
     public Double getBono(){
         return this.bono;

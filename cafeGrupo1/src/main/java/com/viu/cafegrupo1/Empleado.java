@@ -14,7 +14,7 @@ public abstract class Empleado {
     double salario;
     
     // el constructor
-    public Empleado(String nombres, String apellidos, String documento_id, Double salario){
+    public Empleado(String nombres, String apellidos, String documento_id, double salario){
         this.nombres = nombres;
         this.apellidos = apellidos;
         this.documento_id = documento_id;
