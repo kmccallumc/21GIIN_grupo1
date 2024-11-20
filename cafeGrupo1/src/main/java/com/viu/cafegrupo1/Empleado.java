@@ -54,6 +54,7 @@ public abstract class Empleado {
             return extras+this.salario;
         }catch(NumberFormatException nfe){
             System.out.print(nfe.getMessage());
+            System.out.println("Error en calculo de salario del empleado");
             return -1;
         }
             

@@ -32,6 +32,7 @@ class Operaciones {
             double catAnt = this.prod[i].getNotaCata();
             this.prod[i].setNotaCata(catAnt+1);
         }
+        // este metodo solo puede ser invocado dentro de Operaciones.
         this.gestionarInventario();
     }
     

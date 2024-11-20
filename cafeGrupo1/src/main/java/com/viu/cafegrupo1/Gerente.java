@@ -8,7 +8,7 @@ package com.viu.cafegrupo1;
 // para heredar de Empleado, uso el extend
 public class Gerente extends Empleado{
     String departamento;
-    Double bono;
+    double bono;
     
     public Gerente(String nombres, String apellidos, String documentoId, double salario){
         super(nombres, apellidos, documentoId, salario);
@@ -22,10 +22,10 @@ public class Gerente extends Empleado{
         this.departamento = depa;
     }
     
-    public Double getBono(){
+    public double getBono(){
         return this.bono;
     }
-    public void setBono(Double bono){
+    public void setBono(double bono){
         this.bono = bono;
     }
 
@@ -36,9 +36,11 @@ public class Gerente extends Empleado{
     @Override
     public double calcularSalario(double extras){
         try{
-            return (salarioTotal() + extras);
+            double salarioPlus = salarioTotal() + extras;
+            return (salarioPlus);
         }catch(NumberFormatException nfe){
             System.out.print(nfe.getMessage());
+            System.out.print("Error en calculo de salario del gerente");
             return -1;
         }
     } 

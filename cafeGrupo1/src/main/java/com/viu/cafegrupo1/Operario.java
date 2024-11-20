@@ -8,7 +8,7 @@ package com.viu.cafegrupo1;
 // para heredar de Empleado, uso el extend
 // necesito ademas de un gerente, operarios
 public class Operario extends Empleado{
-    Double bono;
+    double bono;
     
     public Operario(String nombres, String apellidos, String documentoId, double salario){
         super(nombres, apellidos, documentoId, salario);
@@ -16,25 +16,15 @@ public class Operario extends Empleado{
     
     // añado los get y set para los atributos departamento y bono
     
-    public Double getBono(){
+    public double getBono(){
         return this.bono;
     }
-    public void setBono(Double bono){
+    public void setBono(double bono){
         this.bono = bono;
     }
 
     public double salarioTotal() {
         return (this.bono + this.salario);
     }
-    
-    @Override
-    public double calcularSalario(double extras){
-        try{
-            return (salarioTotal() + extras);
-        }catch(NumberFormatException nfe){
-            System.out.print(nfe.getMessage());
-            return -1;
-        }
-    } 
-    
+        
 }
